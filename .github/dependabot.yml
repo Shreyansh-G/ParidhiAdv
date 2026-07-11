@@ -1,22 +1,30 @@
-# Keeps dependencies patched without me having to remember.
+# Keeps dependencies patched without babysitting.
 #
-# Every PR it opens runs through CI (typecheck, lint, test, build), so a bump
-# that breaks the build never gets merged. Updates are grouped so this produces
-# a couple of reviewable PRs a week rather than twenty.
+# MAJOR versions are deliberately ignored. A major bump is a breaking change by
+# definition, and a green CI run does not make one safe — `firebase-functions`
+# 6 → 7 would ship straight to the deployed backend, where a build passing tells
+# you nothing about runtime. Majors are a decision, not a chore, so they get made
+# by hand.
 #
-# Note: functions/ pins a transitive `uuid` override (see SECURITY.md). Dependabot
-# will not touch it, and shouldn't -- the advisory it fixes is unreachable, and
-# the "official" fix breaks the build.
+# The first run of this file proved the point: Dependabot proposed
+# firebase-admin 13 → 14, CI failed, and that is exactly the upgrade documented
+# in SECURITY.md as one that breaks the build *and* doesn't fix the advisory it
+# claims to.
+#
+# So: minor and patch only, grouped into one PR per package, monthly. Quiet
+# enough to actually read.
 
 version: 2
 updates:
   - package-ecosystem: npm
     directory: /web
     schedule:
-      interval: weekly
-    open-pull-requests-limit: 5
+      interval: monthly
+    open-pull-requests-limit: 2
+    ignore:
+      - dependency-name: '*'
+        update-types: [version-update:semver-major]
     groups:
-      # Patch/minor bumps are almost always safe — batch them into one PR.
       minor-and-patch:
         update-types: [minor, patch]
     labels: [dependencies, web]
@@ -24,8 +32,14 @@ updates:
   - package-ecosystem: npm
     directory: /functions
     schedule:
-      interval: weekly
-    open-pull-requests-limit: 5
+      interval: monthly
+    open-pull-requests-limit: 2
+    ignore:
+      - dependency-name: '*'
+        update-types: [version-update:semver-major]
+      # Pinned via an override — see SECURITY.md. The advisory needs uuid
+      # v3/v5/v6 with a buf argument; nothing in the tree calls anything but v4().
+      - dependency-name: uuid
     groups:
       minor-and-patch:
         update-types: [minor, patch]
@@ -35,4 +49,8 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    open-pull-requests-limit: 2
+    ignore:
+      - dependency-name: '*'
+        update-types: [version-update:semver-major]
     labels: [dependencies, ci]
