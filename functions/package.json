@@ -20,7 +20,7 @@
     "@langchain/langgraph": "^1.4.7",
     "chromadb": "^3.5.0",
     "firebase-admin": "^13.10.0",
-    "firebase-functions": "^6.6.0"
+    "firebase-functions": "^7.2.5"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
