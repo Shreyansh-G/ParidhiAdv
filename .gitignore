@@ -63,6 +63,9 @@ main_1.py
 npm-debug.log*
 yarn-debug.log*
 
+# Personal notes — never publish
+PROJECT_INFO.md
+
 # Misc
 .firebase/
 *.local
