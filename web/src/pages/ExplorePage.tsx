@@ -215,6 +215,10 @@ export function ExplorePage() {
     Number(import.meta.env.VITE_DEFAULT_LAT || 28.6139),
     Number(import.meta.env.VITE_DEFAULT_LNG || 77.209),
   ])
+  // iOS Safari doesn't define Notification at all until the site is installed to
+  // the home screen. Checked once, and never allowed to block the map.
+  const notificationsSupported = typeof window !== 'undefined' && 'Notification' in window
+
   // `userPosition` starts at the default coords, so it can't tell us whether a
   // real fix has landed yet. This can.
   const [hasGpsFix, setHasGpsFix] = useState(false)
@@ -676,8 +680,10 @@ export function ExplorePage() {
   }
 
   async function enableNotifications() {
-    if (!('Notification' in window)) {
-      setStatusMessage('Notifications not supported')
+    if (!notificationsSupported) {
+      // iOS Safari only exposes Notification once the site is installed to the
+      // home screen. Say so, instead of a dead-end "not supported".
+      setStatusMessage('Notifications need the app installed to your home screen')
       return
     }
 
@@ -1042,8 +1048,10 @@ export function ExplorePage() {
         <div className="absolute inset-0 z-[60] bg-black/30 backdrop-blur-sm flex items-center justify-center px-4">
           <div className="bg-white rounded-3xl p-6 max-w-sm space-y-4">
             <div>
-              <h2 className="text-lg font-black text-[#451a03]">Enable Permissions</h2>
-              <p className="text-xs text-gray-500 mt-1">To explore projects and get notifications</p>
+              <h2 className="text-lg font-black text-[#451a03]">Enable Location</h2>
+              <p className="text-xs text-gray-500 mt-1">
+                The map needs your location to show what's being built around you.
+              </p>
             </div>
 
             {/* Location Toggle */}
@@ -1063,10 +1071,11 @@ export function ExplorePage() {
               {locationAllowed && <CheckCircle size={18} className="text-green-600" />}
             </button>
 
-            {/* Notification Toggle */}
+            {/* Notification Toggle — OPTIONAL. Never gates the map. */}
             <button
               onClick={enableNotifications}
-              className="w-full flex items-center gap-3 px-4 py-3 rounded-2xl border-2 transition-all"
+              disabled={!notificationsSupported}
+              className="w-full flex items-center gap-3 px-4 py-3 rounded-2xl border-2 transition-all disabled:opacity-60"
               style={{
                 backgroundColor: notificationsAllowed ? '#dbeafe' : '#fff',
                 borderColor: notificationsAllowed ? '#0ea5e9' : '#e5e7eb',
@@ -1074,8 +1083,16 @@ export function ExplorePage() {
             >
               <Bell size={20} className={notificationsAllowed ? 'text-blue-600' : 'text-gray-400'} />
               <div className="flex-1 text-left">
-                <p className="text-xs font-bold text-gray-900">Notifications</p>
-                <p className="text-[11px] text-gray-500">{notificationsAllowed ? '✓ Enabled' : 'Tap to enable'}</p>
+                <p className="text-xs font-bold text-gray-900">
+                  Notifications <span className="font-medium text-gray-400">· optional</span>
+                </p>
+                <p className="text-[11px] text-gray-500">
+                  {!notificationsSupported
+                    ? 'Install to your home screen to enable'
+                    : notificationsAllowed
+                      ? '✓ Enabled'
+                      : 'Tap to enable'}
+                </p>
               </div>
               {notificationsAllowed && <CheckCircle size={18} className="text-green-600" />}
             </button>
@@ -1085,6 +1102,14 @@ export function ExplorePage() {
                 {statusMessage}
               </div>
             )}
+
+            {/* Always an escape hatch. Never trap the user behind a permission. */}
+            <button
+              onClick={() => setShowPermissions(false)}
+              className="w-full text-center text-[11px] font-bold uppercase tracking-widest text-stone-400 hover:text-stone-600 py-1"
+            >
+              Skip for now
+            </button>
           </div>
         </div>
       )}

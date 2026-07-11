@@ -63,7 +63,11 @@ export function PermissionsProvider({ children }: { children: React.ReactNode })
     () => ({
       locationAllowed: permissions.location,
       notificationsAllowed: permissions.notifications,
-      allExplorePermissionsGranted: permissions.location && permissions.notifications,
+      // Explore needs LOCATION. Notifications are a nice-to-have and must never
+      // gate the map: iOS Safari doesn't expose the Notification API at all
+      // unless the site is installed to the home screen, so requiring it made
+      // the entire Explore page permanently unreachable on iPhone.
+      allExplorePermissionsGranted: permissions.location,
       setLocationAllowed: (value) =>
         setPermissions((previous) => ({
           ...previous,
