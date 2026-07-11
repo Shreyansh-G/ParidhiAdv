@@ -14,10 +14,61 @@ import {
   Globe,
 } from "lucide-react";
 import { SUPPORTED_LANGUAGES, changeLanguage, getStoredLanguage } from "../lib/languageTranslation";
+import { requestPushToken } from "../lib/firebase";
 
 export function ProfilePage() {
   const { user, signIn, signOut, loading } = useAuth();
-  const { locationAllowed, notificationsAllowed } = usePermissions();
+  const {
+    locationAllowed,
+    notificationsAllowed,
+    setLocationAllowed,
+    setNotificationsAllowed,
+  } = usePermissions();
+
+  // iOS Safari only exposes Notification once the site is installed to the home screen.
+  const notificationsSupported = typeof window !== "undefined" && "Notification" in window;
+  const [permissionNote, setPermissionNote] = useState("");
+
+  function toggleLocation() {
+    if (locationAllowed) {
+      setLocationAllowed(false);
+      setPermissionNote("");
+      return;
+    }
+    if (!("geolocation" in navigator)) {
+      setPermissionNote("This browser can't share your location.");
+      return;
+    }
+    // The browser only shows its prompt in response to a real request.
+    navigator.geolocation.getCurrentPosition(
+      () => {
+        setLocationAllowed(true);
+        setPermissionNote("");
+      },
+      (error) => setPermissionNote(`Location denied — ${error.message}`),
+      { enableHighAccuracy: true },
+    );
+  }
+
+  async function toggleNotifications() {
+    if (notificationsAllowed) {
+      setNotificationsAllowed(false);
+      setPermissionNote("");
+      return;
+    }
+    if (!notificationsSupported) {
+      setPermissionNote("Add Paridhi to your home screen to enable notifications.");
+      return;
+    }
+    const permission = await Notification.requestPermission();
+    if (permission !== "granted") {
+      setPermissionNote("Notification permission denied.");
+      return;
+    }
+    await requestPushToken().catch(() => null);
+    setNotificationsAllowed(true);
+    setPermissionNote("");
+  }
   // Read the stored preference during the first render, so the UI never flashes
   // the default 'en' before correcting itself.
   const [selectedLanguage, setSelectedLanguage] = useState(() => getStoredLanguage() || 'en');
@@ -89,13 +140,21 @@ export function ProfilePage() {
               icon={<MapPin size={16} />}
               label="Location Tracking"
               isActive={locationAllowed}
+              onToggle={toggleLocation}
             />
             <ToggleRow
               icon={<Bell size={16} />}
               label="Push Notifications"
               isActive={notificationsAllowed}
+              onToggle={toggleNotifications}
+              disabled={!notificationsSupported}
             />
           </div>
+          {permissionNote && (
+            <p className="text-[11px] font-semibold text-orange-700 bg-orange-50 rounded-xl px-3 py-2 mt-2">
+              {permissionNote}
+            </p>
+          )}
         </div>
 
         {/* 3. LANGUAGE SELECTION */}
@@ -195,17 +254,32 @@ export function ProfilePage() {
 }
 
 // COMPONENT: Toggle Switch Row
+//
+// This used to be a plain <div> with `cursor-pointer` and no handler — a switch
+// that looked interactive and did nothing. It's a real button now.
 function ToggleRow({
   icon,
   label,
   isActive,
+  onToggle,
+  disabled = false,
 }: {
   icon: React.ReactNode;
   label: string;
   isActive: boolean;
+  onToggle: () => void;
+  disabled?: boolean;
 }) {
   return (
-    <div className="flex items-center justify-between p-4 hover:bg-stone-50 rounded-2xl transition-colors">
+    <button
+      type="button"
+      onClick={onToggle}
+      disabled={disabled}
+      role="switch"
+      aria-checked={isActive}
+      aria-label={label}
+      className="w-full flex items-center justify-between p-4 hover:bg-stone-50 rounded-2xl transition-colors text-left disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.99]"
+    >
       <div className="flex items-center gap-3">
         <div className="h-10 w-10 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center">
           {icon}
@@ -215,13 +289,13 @@ function ToggleRow({
 
       {/* IOS STYLE SWITCH */}
       <div
-        className={`w-12 h-6 flex items-center rounded-full p-1 cursor-pointer transition-all duration-300 ${isActive ? "bg-orange-500" : "bg-stone-200"}`}
+        className={`w-12 h-6 flex items-center rounded-full p-1 shrink-0 transition-all duration-300 ${isActive ? "bg-orange-500" : "bg-stone-200"}`}
       >
         <div
           className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-all duration-300 ${isActive ? "translate-x-6" : "translate-x-0"}`}
         />
       </div>
-    </div>
+    </button>
   );
 }
 
