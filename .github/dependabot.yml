@@ -1,0 +1,38 @@
+# Keeps dependencies patched without me having to remember.
+#
+# Every PR it opens runs through CI (typecheck, lint, test, build), so a bump
+# that breaks the build never gets merged. Updates are grouped so this produces
+# a couple of reviewable PRs a week rather than twenty.
+#
+# Note: functions/ pins a transitive `uuid` override (see SECURITY.md). Dependabot
+# will not touch it, and shouldn't -- the advisory it fixes is unreachable, and
+# the "official" fix breaks the build.
+
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /web
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      # Patch/minor bumps are almost always safe — batch them into one PR.
+      minor-and-patch:
+        update-types: [minor, patch]
+    labels: [dependencies, web]
+
+  - package-ecosystem: npm
+    directory: /functions
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+    labels: [dependencies, functions]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    labels: [dependencies, ci]
