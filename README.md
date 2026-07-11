@@ -50,8 +50,8 @@ Two questions a citizen can't easily answer: **what is being built near me**, an
 missing near me**. The first is scattered across PDFs and district portals. The second nobody
 publishes at all.
 
-Paridhi answers both from free public data, in any Indian town — not just the metros. Most civic apps
-hardcode Delhi and Mumbai, which is useless if you live in Sonbhadra.
+Paridhi answers both from free public data, and it works **anywhere in India** — not just the metros.
+Most civic tools hardcode a handful of big cities, which leaves out most of the country.
 
 Hence the name: *paridhi* (परिधि) is Sanskrit for **circumference**. The app is about the circle you
 live inside.
@@ -107,8 +107,8 @@ rung**. But *acceptance* never widens:
 const acceptKm = Math.min(Math.max(state.radiusKm * 2.5, 10), 20)
 ```
 
-It climbs to find the story, and still only pins projects near you. A hallucinated bridge in Mumbai
-is dropped by arithmetic, not by trust.
+It climbs to find the story, and still only pins projects near you. A hallucinated project 400 km
+away is dropped by arithmetic, not by trust.
 
 Pooling matters: stopping at the first non-empty rung was a trap — the towns rung returned 8 crime
 stories, which would have satisfied a naive "found something" check and starved the district rung
