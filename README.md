@@ -21,6 +21,23 @@ Maps what's being built near you, and computes what *should* be.
 
 ---
 
+## Try it in 60 seconds
+
+Open the [**live app**](https://paridhi-adv.vercel.app) — on a phone if you can, since it's GPS-driven —
+sign in, allow location, then:
+
+| Tap | What it's actually doing |
+|---|---|
+| **SCAN** | Queries OpenStreetMap's Overpass API **from your browser**. No backend, no cost. |
+| **NEEDS** | Gravity model + 2SFCA over an OSM-derived population grid. Red = people, no facilities. |
+| **WALK** | Solves a TSP across nearby projects (nearest-neighbour, then 2-opt). |
+| **DEEP** | A LangGraph agent crawls OSM *and* local news, geocodes what it reads, and validates it. ~30–60 s. |
+| **Search** → *"heart treatment"* | Vector search. Ranks hospitals top — the phrase appears nowhere in the data. |
+
+It works in any Indian town, not a hardcoded list of cities. Try it wherever you actually are.
+
+---
+
 ## Contents
 
 [Problem](#problem) · [Design rule](#design-rule) · [Architecture](#architecture) · [Deep Scan](#deep-scan) · [Retrieval](#retrieval) · [Maths](#maths) · [Security](#security) · [Cost](#cost) · [Lessons](#lessons) · [Stack](#stack) · [Layout](#layout) · [Setup](#setup) · [Deploy](#deploy) · [CI](#ci) · [Troubleshooting](#troubleshooting) · [Glossary](#glossary) · [Limits](#limits) · [Credits](#credits)
@@ -241,6 +258,17 @@ is not valid JSON`. The smoke test missed it because it hand-wrote the tool obje
 **A ref read during render never corrects itself.** `isMonitoring: watchIdRef.current !== null` —
 refs are assigned in effects, after render, and never trigger one. It reported `false` on first paint
 forever.
+
+**Never gate a feature on a permission the platform can't grant.** Explore required *both* location
+and notifications. iOS Safari doesn't define `window.Notification` at all unless the site is
+installed to the home screen — so the gate was unsatisfiable and the map was unreachable on iPhone,
+with no dismiss button. Location is required now; notifications are optional. Desktop testing will
+never show you this.
+
+**A `<div>` with `cursor-pointer` is not a button.** The Account permission switches rendered state
+and had no `onClick`. They looked interactive and did nothing. They're real `<button role="switch">`
+elements now — and the location toggle calls `getCurrentPosition()`, because the browser only shows
+its prompt in response to an actual request. Setting a flag in localStorage asks no one anything.
 
 ## Stack
 
