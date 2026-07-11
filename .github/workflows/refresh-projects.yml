@@ -1,0 +1,60 @@
+# Weekly live-data refresh — free on GitHub Actions.
+# Re-crawls Delhi infrastructure from OpenStreetMap (Overpass API) and commits
+# the regenerated dataset. A push to main auto-redeploys the app on Vercel.
+name: Refresh live project data
+
+on:
+  schedule:
+    - cron: '30 3 * * 1' # every Monday, 09:00 IST
+  workflow_dispatch: {} # manual "Run workflow" button
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Crawl live Delhi infrastructure (Overpass API)
+        run: node script/fetch-live-projects.mjs
+        env:
+          # Optional: set in repo Settings → Secrets to enable data.gov.in sources
+          DATA_GOV_IN_API_KEY: ${{ secrets.DATA_GOV_IN_API_KEY }}
+
+      # The crawler writes the dataset into BOTH packages. If those copies ever
+      # disagree, project ids diverge between tiers and results go silently
+      # missing rather than erroring — so refuse to commit a drifted dataset.
+      - name: Verify web/ and functions/ datasets agree
+        run: node script/check-data-sync.mjs
+
+      # Reseed the ChromaDB vector index with the refreshed dataset.
+      # Skips itself until CHROMA_URL/CHROMA_TOKEN repo secrets exist.
+      - name: Reseed Chroma vector index
+        env:
+          CHROMA_URL: ${{ secrets.CHROMA_URL }}
+          CHROMA_TOKEN: ${{ secrets.CHROMA_TOKEN }}
+        run: |
+          if [ -z "$CHROMA_URL" ]; then
+            echo "::warning title=Chroma index is going stale::CHROMA_URL secret is not set, so the vector index was NOT reseeded. The dataset below was refreshed, but semantic search is still ranking against older vectors — new projects are invisible to it. Set CHROMA_URL/CHROMA_TOKEN in Settings → Secrets → Actions."
+            exit 0
+          fi
+          npm ci --ignore-scripts
+          node script/seed-chroma.mjs
+
+      - name: Commit refreshed dataset (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/src/data/projectsLive.ts functions/src/projectsLive.ts
+          if git diff --cached --quiet; then
+            echo "No data changes this week."
+          else
+            git commit -m "chore(data): weekly live project refresh from OpenStreetMap"
+            git push
+          fi

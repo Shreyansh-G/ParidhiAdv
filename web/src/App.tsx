@@ -1,0 +1,42 @@
+import { Navigate, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { AppShell } from "./components/layout/AppShell";
+import { AboutPage } from "./pages/AboutPage";
+import { ExplorePage } from "./pages/ExplorePage";
+import { HomePage } from "./pages/HomePage";
+import { NotFoundPage } from "./pages/NotFoundPage";
+import { PrivacyPage } from "./pages/PrivacyPage";
+import { ProfilePage } from "./pages/ProfilePage";
+import { ProgressPage } from "./pages/ProgressPage";
+import { TosPage } from "./pages/TosPage";
+import SearchPage from "./pages/SearchPage";
+import Settingpages from "./pages/Settingpages";
+import NotificationsPage from "./pages/NotificationsPage";
+import { initializeLanguagePreference } from "./lib/languageTranslation";
+
+function App() {
+  // Initialize language preference on app load
+  useEffect(() => {
+    initializeLanguagePreference()
+  }, [])
+  return (
+    <Routes>
+      <Route element={<AppShell />}>
+        <Route index element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/explore" element={<ExplorePage />} />
+        <Route path="/progress" element={<ProgressPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/tos" element={<TosPage />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/setting" element={<Settingpages />} />
+        <Route path="/notification" element={<NotificationsPage/>}/>
+      </Route>
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  );
+}
+
+export default App;

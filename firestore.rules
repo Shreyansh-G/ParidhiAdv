@@ -1,0 +1,89 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    match /posts/{postId} {
+      allow read: if true;
+      // Posts are created ONLY by the createPost Cloud Function (admin SDK
+      // bypasses rules). Client writes are refused because they could forge
+      // authorName (impersonation), skip the image content-type check, and
+      // dodge the rate limit that protects the AI moderation quota.
+      allow create, update: if false;
+      // Authors may remove their own posts.
+      allow delete: if signedIn() && resource.data.authorId == request.auth.uid;
+
+      match /votes/{voteId} {
+        // Votes are written ONLY by the votePost Cloud Function (admin SDK
+        // bypasses rules) — direct client writes could corrupt the counters.
+        allow read: if signedIn() && request.auth.uid == voteId;
+        allow write: if false;
+      }
+
+      match /reports/{reportId} {
+        // Reports are written ONLY by the reportPost Cloud Function, which
+        // also increments the post's report counter transactionally.
+        allow read: if signedIn();
+        allow write: if false;
+      }
+    }
+
+    match /users/{userId} {
+      // Owner-only: user docs hold email + permission flags. All app reads
+      // are own-document (Auth/Exploration/Permissions contexts); community
+      // author info is denormalized onto posts, so no cross-user read is needed.
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    match /notifications/{notificationId} {
+      allow read: if signedIn() && resource.data.userId == request.auth.uid;
+      // Users may only create notifications addressed to themselves
+      // (geofence self-notifications). Anything else must come from
+      // Cloud Functions (admin SDK bypasses rules).
+      allow create: if signedIn()
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.title is string
+        && request.resource.data.title.size() <= 200;
+      allow update, delete: if signedIn() && resource.data.userId == request.auth.uid;
+    }
+
+    // Server-only caches (Deep Scan results, geocoding, AI insights). The admin
+    // SDK bypasses rules, so Cloud Functions still read/write these freely;
+    // clients get the data through the callables, never directly.
+    match /discoveryCache/{cellId} {
+      allow read, write: if false;
+    }
+
+    match /geocodeCache/{queryId} {
+      allow read, write: if false;
+    }
+
+    // What the AI has learned about OSM tags it wasn't taught (learned once,
+    // reused forever). Server-only.
+    match /tagClassifications/{tagId} {
+      allow read, write: if false;
+    }
+
+    match /aiInsights/{projectId} {
+      allow read, write: if false;
+    }
+
+    // Per-user API budgets. Server-only: a client that could edit these could
+    // lift its own limits.
+    match /rateLimits/{limitId} {
+      allow read, write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

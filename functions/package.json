@@ -1,0 +1,31 @@
+{
+  "name": "paridhi-functions",
+  "private": true,
+  "main": "lib/index.js",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "serve": "firebase emulators:start --only functions,firestore",
+    "deploy": "firebase deploy --only functions",
+    "lint": "eslint --ext .js,.ts src"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0",
+    "@anthropic-ai/vertex-sdk": "^0.19.0",
+    "@chroma-core/default-embed": "^0.1.9",
+    "@google/genai": "^2.11.0",
+    "@langchain/core": "^1.2.2",
+    "@langchain/langgraph": "^1.4.7",
+    "chromadb": "^3.5.0",
+    "firebase-admin": "^13.10.0",
+    "firebase-functions": "^6.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}

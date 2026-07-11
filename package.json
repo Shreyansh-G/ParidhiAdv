@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "check:data": "node script/check-data-sync.mjs",
+    "refresh:data": "node script/fetch-live-projects.mjs",
+    "seed:chroma": "node script/seed-chroma.mjs"
+  },
+  "devDependencies": {
+    "@chroma-core/default-embed": "^0.1.9",
+    "chromadb": "^3.5.0"
+  }
+}

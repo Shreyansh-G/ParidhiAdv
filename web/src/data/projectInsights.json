@@ -1,0 +1,353 @@
+{
+  "proj_delhi_hc_sblock_001": {
+    "enhancedDescription": "The S Block of the Delhi High Court complex is undergoing structural and civil repairs under the annual maintenance programme. The work keeps courtrooms and offices safe for the thousands of litigants, lawyers and staff who move through the complex every working day.",
+    "impactStatement": "Keeps one of India's busiest court complexes safe and functional for daily justice delivery.",
+    "urgency": "medium",
+    "visibility": "regional",
+    "estimatedCitizens": 150000,
+    "keywords": ["judiciary", "civil repair", "public buildings"],
+    "citizenTip": "Court complexes remain open during phased repairs — check the Delhi High Court website for any block-specific entry changes before visiting."
+  },
+  "proj_ddma_alipur_001": {
+    "enhancedDescription": "The District Disaster Management Authority control room at the Alipur DM office is being renovated into a modern emergency coordination hub. From floods to heatwaves, this room is where North Delhi's disaster response gets coordinated.",
+    "impactStatement": "Faster, better-coordinated disaster response for North Delhi's residents.",
+    "urgency": "high",
+    "visibility": "regional",
+    "estimatedCitizens": 900000,
+    "keywords": ["disaster management", "emergency response", "control room"],
+    "citizenTip": "Save the DDMA helpline 1077 — it connects you to this very control room during emergencies."
+  },
+  "proj_delhi_hc_maint_002": {
+    "enhancedDescription": "Year-round plumbing and carpentry upkeep across the Delhi High Court for 2025-26. Unglamorous but essential — leaking washrooms and broken fittings in a complex serving thousands daily add up to real public inconvenience.",
+    "impactStatement": "Reliable basic amenities for everyone attending court proceedings.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 100000,
+    "keywords": ["maintenance", "public amenities", "judiciary"],
+    "citizenTip": "Spot a broken fixture at a public building? Most PWD sites display a complaint number — reporting it actually routes to contracts like this one."
+  },
+  "proj_air_pollution_001": {
+    "enhancedDescription": "Hydraulic anti-smog guns now patrol South West Delhi's roads, spraying fine water mist that binds dust and particulate matter before it reaches your lungs. Part of Delhi's winter air-quality action plan.",
+    "impactStatement": "Measurably lower roadside dust in one of the world's most polluted urban corridors.",
+    "urgency": "high",
+    "visibility": "regional",
+    "estimatedCitizens": 2300000,
+    "keywords": ["air quality", "anti-smog", "pollution control"],
+    "citizenTip": "Anti-smog guns work best on construction dust — report uncovered construction sites on the Green Delhi app to direct them where they're needed."
+  },
+  "proj_cctv_ac40_001": {
+    "enhancedDescription": "1,050 CCTV cameras were installed across the New Delhi assembly constituency (AC-40), covering markets, colony gates and junctions. Footage links to police control rooms and has become a key tool for both crime deterrence and traffic management.",
+    "impactStatement": "Round-the-clock surveillance coverage improving public safety, especially for women and the elderly.",
+    "urgency": "medium",
+    "visibility": "local",
+    "estimatedCitizens": 300000,
+    "keywords": ["CCTV", "public safety", "surveillance"],
+    "citizenTip": "RWAs can request camera placement reviews through their local MLA office — coverage maps are public."
+  },
+  "proj_led_shalimar_001": {
+    "enhancedDescription": "Street poles across Shalimar Bagh now carry tri-colour LED strip lighting — cutting energy use versus older fittings while making the area brighter and more festive after dark.",
+    "impactStatement": "Brighter, safer streets at a lower long-term power cost.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 200000,
+    "keywords": ["LED lighting", "energy efficiency", "street safety"],
+    "citizenTip": "Dark stretch on your street? Report non-working streetlights with a pole number on the MCD 311 app."
+  },
+  "proj_atal_asha_narela_001": {
+    "enhancedDescription": "The Primary Health Centre at Atal Asha Home in Narela is getting continuous day-to-day maintenance, keeping frontline healthcare running for one of Delhi's fastest-growing sub-cities.",
+    "impactStatement": "Dependable first-contact healthcare for Narela's residents, including vaccination and mother-child services.",
+    "urgency": "high",
+    "visibility": "local",
+    "estimatedCitizens": 250000,
+    "keywords": ["primary healthcare", "PHC", "Narela"],
+    "citizenTip": "PHCs offer free OPD consultations and basic medicines — visiting one before a big hospital often saves hours."
+  },
+  "proj_road_strengthening_se_delhi_001": {
+    "enhancedDescription": "South East Delhi's arterial roads are being rebuilt with cold milling and recycling — the old surface is ground up and reused in the new one, cutting both cost and construction waste while delivering a smoother ride.",
+    "impactStatement": "Smoother, longer-lasting roads with a smaller environmental footprint.",
+    "urgency": "medium",
+    "visibility": "regional",
+    "estimatedCitizens": 1800000,
+    "keywords": ["road recycling", "cold milling", "sustainability"],
+    "citizenTip": "Freshly milled surfaces are temporarily rough for two-wheelers — watch for the grooved-surface warning boards."
+  },
+  "proj_jaitpur_road_001": {
+    "enhancedDescription": "A 1.25 km stretch of Jaitpur Road is being strengthened and resurfaced. Short in length but heavy in daily use, this link carries dense mixed traffic between Badarpur and the Yamuna floodplain colonies.",
+    "impactStatement": "Fewer potholes and quicker commutes for tens of thousands of daily users.",
+    "urgency": "medium",
+    "visibility": "local",
+    "estimatedCitizens": 120000,
+    "keywords": ["road strengthening", "Jaitpur", "commute"],
+    "citizenTip": "Work zones shift daily on short stretches like this — an early-morning pass is usually the least disrupted."
+  },
+  "proj_ser2_multi_roads_002": {
+    "enhancedDescription": "A cluster of roads under the South East Road Division-2 is being strengthened in one coordinated contract — bundling nearby streets means machinery moves once and neighbourhoods aren't dug up twice.",
+    "impactStatement": "A whole cluster of colony roads upgraded together instead of piecemeal digging over years.",
+    "urgency": "medium",
+    "visibility": "local",
+    "estimatedCitizens": 400000,
+    "keywords": ["road cluster", "resurfacing", "coordination"],
+    "citizenTip": "Bundled contracts publish street lists — ask your RWA for the schedule so you can plan parking around resurfacing days."
+  },
+  "proj_keshav_vidyalaya_001": {
+    "enhancedDescription": "Keshav Maha Vidyalaya's RO plant and water systems received full maintenance, ensuring students and staff across the campus have safe drinking water year-round.",
+    "impactStatement": "Safe drinking water for an entire college campus.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 8000,
+    "keywords": ["drinking water", "RO plant", "campus"],
+    "citizenTip": "Public institutions must display water-quality test results — students can ask administration for the latest RO report."
+  },
+  "proj_mayur_vihar_flats_001": {
+    "enhancedDescription": "Electrical systems and lighting across the Mayur Vihar Phase II flats cluster are being overhauled — safer wiring, better common-area lighting and fewer outages for hundreds of families.",
+    "impactStatement": "Safer wiring and reliable lighting for a large residential cluster.",
+    "urgency": "medium",
+    "visibility": "local",
+    "estimatedCitizens": 15000,
+    "keywords": ["electrical safety", "housing", "lighting"],
+    "citizenTip": "During rewiring work, note the contractor board's completion date — delays beyond it can be escalated to the estate office."
+  },
+  "proj_bmh_hospital_001": {
+    "enhancedDescription": "Fire safety systems across the 200-bed BMH Hospital were serviced and upgraded — alarms, extinguishers, hydrants and evacuation routes all brought up to code. In hospitals, fire readiness is literally life-critical.",
+    "impactStatement": "A fully fire-ready 200-bed hospital protecting patients who cannot evacuate themselves.",
+    "urgency": "high",
+    "visibility": "regional",
+    "estimatedCitizens": 500000,
+    "keywords": ["fire safety", "hospital", "compliance"],
+    "citizenTip": "When visiting any hospital, take ten seconds to note the nearest fire exit from the ward — staff drills assume visitors know them."
+  },
+  "proj_srhc_rohini_multi_001": {
+    "enhancedDescription": "A combined surveillance and utility works package across the Rohini healthcare cluster — CCTV, power and water systems at multiple hospitals maintained under one coordinated contract.",
+    "impactStatement": "More secure and reliably powered hospitals across Rohini.",
+    "urgency": "medium",
+    "visibility": "regional",
+    "estimatedCitizens": 800000,
+    "keywords": ["hospital security", "utilities", "Rohini"],
+    "citizenTip": "Hospital CCTV footage is retained for a limited window — report any incident on the premises quickly so footage can be preserved."
+  },
+  "proj_bjrm_laundry_001": {
+    "enhancedDescription": "BJRM Hospital in Jahangirpuri is replacing its industrial laundry machines. Clean linen is a frontline infection-control measure — worn-out laundry systems directly raise hospital-acquired infection risk.",
+    "impactStatement": "Lower infection risk for every admitted patient through reliable linen hygiene.",
+    "urgency": "medium",
+    "visibility": "local",
+    "estimatedCitizens": 300000,
+    "keywords": ["hospital hygiene", "infection control", "equipment"],
+    "citizenTip": "Hygiene standards are auditable — hospital quality scores including linen and sanitation are published under NQAS."
+  },
+  "proj_sgm_lifts_001": {
+    "enhancedDescription": "All lifts at SGM Hospital Mangolpuri were serviced for safe vertical transport — critical in a multi-storey hospital where stretchers, wheelchairs and emergency cases depend on them working every single time.",
+    "impactStatement": "Dependable lifts for patients who cannot take the stairs.",
+    "urgency": "high",
+    "visibility": "local",
+    "estimatedCitizens": 400000,
+    "keywords": ["lifts", "hospital access", "patient safety"],
+    "citizenTip": "Every hospital lift must display a current inspection certificate inside the car — it's your right to check the date."
+  },
+  "proj_dcb_hospital_001": {
+    "enhancedDescription": "Deep Chand Bandhu Hospital is undergoing large-scale electrical and mechanical maintenance — power backup, ventilation, and medical utility systems being brought to full reliability.",
+    "impactStatement": "Uninterrupted power and ventilation for wards, operation theatres and ICUs.",
+    "urgency": "high",
+    "visibility": "regional",
+    "estimatedCitizens": 600000,
+    "keywords": ["hospital infrastructure", "electrical", "reliability"],
+    "citizenTip": "Planned maintenance can shift OPD timings — call the hospital helpline before travelling for a routine visit."
+  },
+  "proj_ac_multi_offices_001": {
+    "enhancedDescription": "Air-conditioning systems across the NWESD-II government office cluster were serviced — better working conditions for staff and shorter, more comfortable waits for citizens visiting public offices.",
+    "impactStatement": "More functional public offices for both staff and visiting citizens.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 50000,
+    "keywords": ["government offices", "HVAC", "maintenance"],
+    "citizenTip": "Many services at these offices are also available online at edistrict.delhigovt.nic.in — check before making the trip."
+  },
+  "proj_nwesd2_micro_001": {
+    "enhancedDescription": "Electrical works across NWESD-II government offices and fire stations — from panel repairs to new wiring. Fire stations especially cannot afford electrical downtime.",
+    "impactStatement": "Fire stations and public offices that stay powered when it matters.",
+    "urgency": "medium",
+    "visibility": "local",
+    "estimatedCitizens": 350000,
+    "keywords": ["electrical works", "fire stations", "public buildings"],
+    "citizenTip": "Delhi Fire Service responds fastest with exact landmarks — save your nearest fire station's direct number alongside 101."
+  },
+  "proj_kmv_power_002": {
+    "enhancedDescription": "Keshav Maha Vidyalaya's high-tension and low-tension electrical panels and transformer were serviced — the invisible backbone that keeps labs, classrooms and hostels running without outages.",
+    "impactStatement": "Outage-free power for a full college campus.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 8000,
+    "keywords": ["power systems", "transformer", "campus"],
+    "citizenTip": "Transformer areas on campuses must be fenced and signed — report open electrical enclosures to campus administration immediately."
+  },
+  "proj_sarvodaya_playground_001": {
+    "enhancedDescription": "The playground at Sarvodaya Vidyalaya, East Punjabi Bagh is being redeveloped with new equipment and surfaces — turning a dusty ground into a proper sports space for hundreds of schoolchildren.",
+    "impactStatement": "A safe, modern play space encouraging daily physical activity for students.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 5000,
+    "keywords": ["school", "playground", "sports"],
+    "citizenTip": "School playgrounds are often open to the neighbourhood on non-school hours — ask the school office about community access timings."
+  },
+  "proj_skv_punjabibagh_003": {
+    "enhancedDescription": "SKV Punjabi Bagh No.2 is renovating toilets, classrooms, flooring and its main gate — the basics that decide whether a government school feels dignified to study in, especially for girl students.",
+    "impactStatement": "Dignified, functional facilities that directly affect attendance — especially girls' attendance.",
+    "urgency": "medium",
+    "visibility": "local",
+    "estimatedCitizens": 4000,
+    "keywords": ["school renovation", "sanitation", "girls' education"],
+    "citizenTip": "School Management Committees include parent members — renovation quality is exactly what SMC meetings are for."
+  },
+  "proj_eastroad_restoration_004": {
+    "enhancedDescription": "Roads in the East Road Division (M-212) are being restored after utility cutting — the trenches left by water, sewer and cable works are being properly refilled and resurfaced instead of patchily covered.",
+    "impactStatement": "An end to the trench scars that make East Delhi roads jarring to drive on.",
+    "urgency": "medium",
+    "visibility": "local",
+    "estimatedCitizens": 500000,
+    "keywords": ["road restoration", "utility cuts", "resurfacing"],
+    "citizenTip": "Utility agencies pay restoration charges upfront — an unrestored trench older than a few weeks is worth a PWD complaint with a photo."
+  },
+  "proj_jail10_water_005": {
+    "enhancedDescription": "Central Jail No. 10 in Rohini is getting borewell redevelopment and waterproofing — reliable water supply and dry, safe buildings for an institution housing thousands.",
+    "impactStatement": "Humane, functional infrastructure in a facility the public rarely sees but the state must maintain.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 10000,
+    "keywords": ["water supply", "waterproofing", "institutional"],
+    "citizenTip": "Groundwater extraction by institutions requires CGWA clearance — borewell redevelopments like this one go through that process."
+  },
+  "proj_seelampur_lighting_006": {
+    "enhancedDescription": "Decorative street lighting now runs from Ghonda Chowk to Maujpur Chowk in Seelampur — a brighter, safer market corridor in one of Delhi's densest trans-Yamuna neighbourhoods.",
+    "impactStatement": "A safer, livelier evening market street for one of Delhi's busiest working-class corridors.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 300000,
+    "keywords": ["street lighting", "market corridor", "Seelampur"],
+    "citizenTip": "Well-lit market streets see measurably less street crime — support keeping lights reported and repaired via MCD 311."
+  },
+  "proj_sgmh_coldroom_007": {
+    "enhancedDescription": "Sanjay Gandhi Memorial Hospital installed new cold-storage and refrigeration units — vaccines, blood units and temperature-sensitive medicines now have dependable cold-chain storage on site.",
+    "impactStatement": "A reliable cold chain for vaccines and blood — spoilage here costs lives, not just money.",
+    "urgency": "high",
+    "visibility": "regional",
+    "estimatedCitizens": 700000,
+    "keywords": ["cold chain", "vaccines", "blood bank"],
+    "citizenTip": "Donating blood? Hospitals with modern cold storage like SGMH can actually bank it safely — donation drives list storage-certified centres."
+  },
+  "proj_bjrm_ups_008": {
+    "enhancedDescription": "BJRM Hospital's UPS backup power systems are under repair and maintenance — the seconds of battery bridge-power that keep ventilators and monitors alive between a grid failure and the generator kicking in.",
+    "impactStatement": "Zero-gap power for life-support equipment during outages.",
+    "urgency": "high",
+    "visibility": "local",
+    "estimatedCitizens": 300000,
+    "keywords": ["UPS", "backup power", "critical care"],
+    "citizenTip": "Power resilience is a fair question to ask any hospital admitting a family member for surgery or ICU care."
+  },
+  "proj_srhc_etp_009": {
+    "enhancedDescription": "The effluent treatment plant at SRHC Hospital was serviced — hospital wastewater carries pathogens and pharmaceutical residues, and this plant treats it before it enters Delhi's sewers.",
+    "impactStatement": "Hospital wastewater treated before it touches the city's sewage system and the Yamuna.",
+    "urgency": "medium",
+    "visibility": "regional",
+    "estimatedCitizens": 1000000,
+    "keywords": ["wastewater", "ETP", "environment"],
+    "citizenTip": "DPCC publishes compliance status of hospital ETPs — environmental compliance is public information you can look up."
+  },
+  "proj_pragati_IECC_010": {
+    "enhancedDescription": "Bharat Mandapam at Pragati Maidan is India's largest convention centre — a 7,000-seat hall with six exhibition halls that hosted the G20 Summit. It anchors Delhi's position as an international events destination.",
+    "impactStatement": "World-class venue capacity that brings global events, trade and tourism revenue to Delhi.",
+    "urgency": "low",
+    "visibility": "city-wide",
+    "estimatedCitizens": 5000000,
+    "keywords": ["Bharat Mandapam", "G20", "convention centre"],
+    "citizenTip": "Bharat Mandapam hosts public expos and trade fairs year-round — entry to many is free with online registration."
+  },
+  "proj_pragati_tunnel_011": {
+    "enhancedDescription": "The 1.3 km six-lane tunnel linking Ring Road (ITO) to India Gate passes under Pragati Maidan — decongesting Mathura Road and giving central Delhi one of its biggest traffic bypasses in decades. Its walls carry India's longest public art corridor.",
+    "impactStatement": "Minutes shaved off tens of thousands of central-Delhi journeys daily, and a signal-free ITO-India Gate link.",
+    "urgency": "medium",
+    "visibility": "city-wide",
+    "estimatedCitizens": 3000000,
+    "keywords": ["tunnel", "decongestion", "Pragati Maidan"],
+    "citizenTip": "The tunnel's art walls depict India's seasons and festivals — worth a slow drive-through on a low-traffic Sunday morning."
+  },
+  "proj_pragati_underpasses_012": {
+    "enhancedDescription": "Six underpasses at Mathura Road and Bhairon Marg are removing the last signalized bottlenecks around Pragati Maidan — together with the tunnel they make the corridor largely signal-free.",
+    "impactStatement": "Signal-free movement across one of central Delhi's most congested junctions clusters.",
+    "urgency": "medium",
+    "visibility": "city-wide",
+    "estimatedCitizens": 2500000,
+    "keywords": ["underpass", "Mathura Road", "signal-free"],
+    "citizenTip": "Underpass lanes flood-test during first monsoons — the drainage pumps here are monitored, but avoid flooded underpasses regardless."
+  },
+  "proj_kartavya_path_013": {
+    "enhancedDescription": "The Central Vista renewal rebuilt the Kartavya Path stretch and delivered the new Parliament building — redeveloping the ceremonial heart of the capital with wider public lawns, canals and walkways.",
+    "impactStatement": "A renewed national ceremonial space that doubles as central Delhi's largest public promenade.",
+    "urgency": "low",
+    "visibility": "city-wide",
+    "estimatedCitizens": 5000000,
+    "keywords": ["Central Vista", "Parliament", "Kartavya Path"],
+    "citizenTip": "Kartavya Path's lawns are open late into the evening — the India Gate stretch is Delhi's best free public space after sunset."
+  },
+  "proj_pragati_skywalk_014": {
+    "enhancedDescription": "Pedestrian skywalks now connect Bharat Mandapam directly to the Pragati Maidan Metro station on the Blue Line — event crowds move between metro and venue without ever crossing Mathura Road traffic.",
+    "impactStatement": "Safe, direct metro-to-venue access for lakhs of event visitors each year.",
+    "urgency": "low",
+    "visibility": "regional",
+    "estimatedCitizens": 1500000,
+    "keywords": ["skywalk", "pedestrian", "metro connectivity"],
+    "citizenTip": "During big expos, the skywalk is dramatically faster than the road entry — follow the metro station's Gate 3 signage."
+  },
+  "proj_delhi_secretariat_av_001": {
+    "enhancedDescription": "The Delhi Secretariat is upgrading its audio-visual and digital conferencing systems — the meeting rooms where the city government coordinates departments are going fully digital.",
+    "impactStatement": "Faster inter-department coordination and fewer decisions delayed by logistics.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 50000,
+    "keywords": ["digital governance", "conferencing", "secretariat"],
+    "citizenTip": "Digitized government meetings leave better records — minutes of many Delhi government meetings are RTI-accessible."
+  },
+  "proj_delhi_secretariat_ro_002": {
+    "enhancedDescription": "Water purification (RO) systems across the Delhi Secretariat are under maintenance — safe drinking water for the thousands of employees and daily visitors at the seat of the city government.",
+    "impactStatement": "Safe drinking water at Delhi's busiest government building.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 20000,
+    "keywords": ["drinking water", "RO systems", "secretariat"],
+    "citizenTip": "Public buildings must provide free drinking water — water points at the Secretariat are on the ground floor near each visitor gate."
+  },
+  "proj_delhi_secretariat_fire_003": {
+    "enhancedDescription": "Fire-fighting systems at the Delhi Secretariat are being repaired — hydrants, sprinklers and alarms across a high-occupancy government complex brought back to full readiness.",
+    "impactStatement": "Fire readiness for a building holding thousands of staff and irreplaceable government records.",
+    "urgency": "high",
+    "visibility": "local",
+    "estimatedCitizens": 25000,
+    "keywords": ["fire safety", "sprinklers", "secretariat"],
+    "citizenTip": "Fire safety certificates for public buildings are renewed annually — expiry dates are public record with Delhi Fire Service."
+  },
+  "proj_delhi_secretariat_bms_004": {
+    "enhancedDescription": "The Secretariat's building management and biometric systems are being upgraded — centralized control of power, HVAC and access for a smarter, more energy-efficient government headquarters.",
+    "impactStatement": "Lower energy waste and tighter security at the government's nerve centre.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 20000,
+    "keywords": ["building management", "biometric", "energy"],
+    "citizenTip": "Building management systems typically cut a large building's power bill by 10-20% — public buildings publishing energy data is worth asking for."
+  },
+  "proj_delhi_secretariat_tv_005": {
+    "enhancedDescription": "Television reception facilities at the Delhi Secretariat are being maintained — live legislative broadcasts and news monitoring for officials coordinating the city's response to unfolding events.",
+    "impactStatement": "Officials staying connected to live proceedings and breaking developments.",
+    "urgency": "low",
+    "visibility": "local",
+    "estimatedCitizens": 10000,
+    "keywords": ["broadcast", "facilities", "secretariat"],
+    "citizenTip": "Delhi Assembly proceedings are streamed publicly — you can watch the same sessions officials monitor, live online."
+  },
+  "proj_delhi_secretariat_cooling_006": {
+    "enhancedDescription": "Cooling towers and HVAC equipment at the Delhi Secretariat are being replaced — centralized climate control for a complex that works through Delhi's 45-degree summers.",
+    "impactStatement": "A functional government headquarters even at peak summer heat.",
+    "urgency": "medium",
+    "visibility": "local",
+    "estimatedCitizens": 20000,
+    "keywords": ["HVAC", "cooling", "heat resilience"],
+    "citizenTip": "Cooling tower upgrades often halve water consumption too — new systems recycle blowdown water."
+  }
+}
