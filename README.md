@@ -15,7 +15,7 @@ Maps what's being built near you, and computes what *should* be.
 ![React](https://img.shields.io/badge/React-19-61dafb)
 ![Node](https://img.shields.io/badge/Node-22-339933)
 
-[**Live app**](https://YOUR_APP.vercel.app)
+### [**→ Live app**](https://paridhi-adv.vercel.app)
 
 </div>
 
