@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-07-09T19:38:37.087Z
+// Fetched: 2026-07-13T06:40:16.432Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsEnhanced'
 
-export const liveProjectsFetchedAt = '2026-07-09T19:38:37.087Z'
+export const liveProjectsFetchedAt = '2026-07-13T06:40:16.432Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
