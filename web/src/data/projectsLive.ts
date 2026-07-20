@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-07-13T06:40:16.432Z
+// Fetched: 2026-07-20T06:34:00.405Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsEnhanced'
 
-export const liveProjectsFetchedAt = '2026-07-13T06:40:16.432Z'
+export const liveProjectsFetchedAt = '2026-07-20T06:34:00.405Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
@@ -404,6 +404,18 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Expands access to education and skill development for students across NCR."
   },
   {
+    "id": "osm-way-1539359556",
+    "name": "Ambedkar University Delhi Lodhi Road Campus",
+    "category": "Colleges",
+    "lat": 28.581072,
+    "lng": 77.219625,
+    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
+    "status": "handovered",
+    "type": "College Campus",
+    "location": "Delhi",
+    "impact": "Expands access to education and skill development for students across NCR."
+  },
+  {
     "id": "osm-way-81352240",
     "name": "Maitreyi College",
     "category": "Colleges",
@@ -487,19 +499,6 @@ export const liveProjects: EnhancedProject[] = [
     "type": "College Campus",
     "location": "Delhi",
     "department": "Delhi University",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-424884415",
-    "name": "Atma Ram Sanatan Dharma College",
-    "category": "Colleges",
-    "lat": 28.591011,
-    "lng": 77.166774,
-    "description": "Higher-education campus in New Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "New Delhi, Delhi",
-    "department": "Delhi University;Sanatan Dharma Sabha",
     "impact": "Expands access to education and skill development for students across NCR."
   },
   {
