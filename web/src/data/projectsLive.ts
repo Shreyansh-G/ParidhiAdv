@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-07-20T06:34:00.405Z
+// Fetched: 2026-07-27T06:53:20.560Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsEnhanced'
 
-export const liveProjectsFetchedAt = '2026-07-20T06:34:00.405Z'
+export const liveProjectsFetchedAt = '2026-07-27T06:53:20.560Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
@@ -1247,23 +1247,47 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
   {
-    "id": "osm-way-1534170863",
-    "name": "Samrat Nagbhatt Gurjar Road",
-    "category": "Road projects",
-    "lat": 28.404801,
-    "lng": 77.105589,
-    "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
-    "status": "ongoing",
-    "type": "Road Under Construction",
-    "location": "Delhi",
-    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
-  },
-  {
     "id": "osm-way-1218426668",
     "name": "Common Central Secretariat",
     "category": "Smart city projects",
     "lat": 28.615438,
     "lng": 77.221793,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1201558793",
+    "name": "GPRA Sarojini Nagar Type 2",
+    "category": "Smart city projects",
+    "lat": 28.580202,
+    "lng": 77.196912,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1201558785",
+    "name": "GPRA Sarojini Nagar Type 4",
+    "category": "Smart city projects",
+    "lat": 28.578868,
+    "lng": 77.195354,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1201558784",
+    "name": "GPRA Sarojini Nagar Type 5",
+    "category": "Smart city projects",
+    "lat": 28.576844,
+    "lng": 77.19404,
     "description": "Active construction/redevelopment site in Delhi, currently in progress.",
     "status": "ongoing",
     "type": "Active Development Site",
@@ -1307,18 +1331,6 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
-    "id": "osm-way-1487166544",
-    "name": "Faculty of Technology",
-    "category": "Smart city projects",
-    "lat": 28.691077,
-    "lng": 77.211624,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
     "id": "osm-way-313544637",
     "name": "Marriot Marquis",
     "category": "Smart city projects",
@@ -1341,6 +1353,18 @@ export const liveProjects: EnhancedProject[] = [
     "type": "Active Development Site",
     "location": "Delhi",
     "department": "Delhi Metro Rail Corporation",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-895444951",
+    "name": "noida habitai center",
+    "category": "Smart city projects",
+    "lat": 28.549028,
+    "lng": 77.323368,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
@@ -1402,45 +1426,6 @@ export const liveProjects: EnhancedProject[] = [
     "status": "ongoing",
     "type": "Active Development Site",
     "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1223763808",
-    "name": "Summit Plaza",
-    "category": "Smart city projects",
-    "lat": 28.445969,
-    "lng": 77.106077,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "department": "DLF",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1374374907",
-    "name": "Godrej Astra",
-    "category": "Smart city projects",
-    "lat": 28.43293,
-    "lng": 77.106237,
-    "description": "Active construction/redevelopment site in Gurugram, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Gurugram, Delhi",
-    "department": "Godrej Properties",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1441600442",
-    "name": "Godrej Samaris",
-    "category": "Smart city projects",
-    "lat": 28.435111,
-    "lng": 77.100024,
-    "description": "Active construction/redevelopment site in Gurugram, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Gurugram, Delhi",
-    "department": "Godrej Properties",
     "impact": "Ongoing urban development contributing to the city’s growth."
   }
 ]
