@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-07-27T06:53:20.560Z
+// Fetched: 2026-08-03T06:49:32.876Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsEnhanced'
 
-export const liveProjectsFetchedAt = '2026-07-27T06:53:20.560Z'
+export const liveProjectsFetchedAt = '2026-08-03T06:49:32.876Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
@@ -404,18 +404,6 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Expands access to education and skill development for students across NCR."
   },
   {
-    "id": "osm-way-1539359556",
-    "name": "Ambedkar University Delhi Lodhi Road Campus",
-    "category": "Colleges",
-    "lat": 28.581072,
-    "lng": 77.219625,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
     "id": "osm-way-81352240",
     "name": "Maitreyi College",
     "category": "Colleges",
@@ -499,6 +487,19 @@ export const liveProjects: EnhancedProject[] = [
     "type": "College Campus",
     "location": "Delhi",
     "department": "Delhi University",
+    "impact": "Expands access to education and skill development for students across NCR."
+  },
+  {
+    "id": "osm-way-424884415",
+    "name": "Atma Ram Sanatan Dharma College",
+    "category": "Colleges",
+    "lat": 28.591011,
+    "lng": 77.166774,
+    "description": "Higher-education campus in New Delhi, part of Delhi's public learning infrastructure.",
+    "status": "handovered",
+    "type": "College Campus",
+    "location": "New Delhi, Delhi",
+    "department": "Delhi University;Sanatan Dharma Sabha",
     "impact": "Expands access to education and skill development for students across NCR."
   },
   {
@@ -1151,18 +1152,6 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
   {
-    "id": "osm-way-672161237",
-    "name": "Ratan Lal Sahdev Marg",
-    "category": "Road projects",
-    "lat": 28.577971,
-    "lng": 77.236067,
-    "description": "Active road construction near Delhi — being built as a residential road. Live from OpenStreetMap construction mapping.",
-    "status": "ongoing",
-    "type": "Road Under Construction (residential)",
-    "location": "Delhi",
-    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
-  },
-  {
     "id": "osm-way-1272488333",
     "name": "Patparganj Road",
     "category": "Road projects",
@@ -1235,11 +1224,47 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
   {
+    "id": "osm-way-1505504375",
+    "name": "Basanti Marg",
+    "category": "Road projects",
+    "lat": 28.518744,
+    "lng": 77.035772,
+    "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
+    "status": "ongoing",
+    "type": "Road Under Construction",
+    "location": "Delhi",
+    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
+  },
+  {
+    "id": "osm-way-1505504373",
+    "name": "Chauma Road",
+    "category": "Road projects",
+    "lat": 28.518703,
+    "lng": 77.035647,
+    "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
+    "status": "ongoing",
+    "type": "Road Under Construction",
+    "location": "Delhi",
+    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
+  },
+  {
     "id": "osm-way-264256640",
     "name": "UER III (80 m)",
     "category": "Road projects",
     "lat": 28.655636,
     "lng": 76.968694,
+    "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
+    "status": "ongoing",
+    "type": "Road Under Construction",
+    "location": "Delhi",
+    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
+  },
+  {
+    "id": "osm-way-1305936732",
+    "name": "Ambedkar Marg",
+    "category": "Road projects",
+    "lat": 28.416824,
+    "lng": 77.330535,
     "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
     "status": "ongoing",
     "type": "Road Under Construction",
@@ -1331,6 +1356,18 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
+    "id": "osm-way-1487166544",
+    "name": "Faculty of Technology",
+    "category": "Smart city projects",
+    "lat": 28.691077,
+    "lng": 77.211624,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
     "id": "osm-way-313544637",
     "name": "Marriot Marquis",
     "category": "Smart city projects",
@@ -1410,18 +1447,6 @@ export const liveProjects: EnhancedProject[] = [
     "category": "Smart city projects",
     "lat": 28.586047,
     "lng": 77.3742,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1424744366",
-    "name": "The Presige City",
-    "category": "Smart city projects",
-    "lat": 28.641093,
-    "lng": 77.398039,
     "description": "Active construction/redevelopment site in Delhi, currently in progress.",
     "status": "ongoing",
     "type": "Active Development Site",
