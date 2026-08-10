@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-08-03T06:49:32.876Z
+// Fetched: 2026-08-10T05:09:22.990Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsData'
 
-export const liveProjectsFetchedAt = '2026-08-03T06:49:32.876Z'
+export const liveProjectsFetchedAt = '2026-08-10T05:09:22.990Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
@@ -404,6 +404,18 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Expands access to education and skill development for students across NCR."
   },
   {
+    "id": "osm-way-1539359556",
+    "name": "Ambedkar University Delhi Lodhi Road Campus",
+    "category": "Colleges",
+    "lat": 28.581072,
+    "lng": 77.219625,
+    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
+    "status": "handovered",
+    "type": "College Campus",
+    "location": "Delhi",
+    "impact": "Expands access to education and skill development for students across NCR."
+  },
+  {
     "id": "osm-way-81352240",
     "name": "Maitreyi College",
     "category": "Colleges",
@@ -487,19 +499,6 @@ export const liveProjects: EnhancedProject[] = [
     "type": "College Campus",
     "location": "Delhi",
     "department": "Delhi University",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-424884415",
-    "name": "Atma Ram Sanatan Dharma College",
-    "category": "Colleges",
-    "lat": 28.591011,
-    "lng": 77.166774,
-    "description": "Higher-education campus in New Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "New Delhi, Delhi",
-    "department": "Delhi University;Sanatan Dharma Sabha",
     "impact": "Expands access to education and skill development for students across NCR."
   },
   {
@@ -1272,11 +1271,35 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
   {
+    "id": "osm-way-1548439800",
+    "name": "Delhi Metro construction",
+    "category": "Smart city projects",
+    "lat": 28.614204,
+    "lng": 77.220205,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
     "id": "osm-way-1218426668",
     "name": "Common Central Secretariat",
     "category": "Smart city projects",
     "lat": 28.615438,
     "lng": 77.221793,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1548439790",
+    "name": "Ministry of external affair construction",
+    "category": "Smart city projects",
+    "lat": 28.621381,
+    "lng": 77.225454,
     "description": "Active construction/redevelopment site in Delhi, currently in progress.",
     "status": "ongoing",
     "type": "Active Development Site",
@@ -1332,35 +1355,11 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
-    "id": "osm-way-1144702710",
-    "name": "Sarai Kale Khan RRTS Station",
-    "category": "Smart city projects",
-    "lat": 28.588941,
-    "lng": 77.258515,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
     "id": "osm-way-1421398322",
     "name": "Nextra Commercial Site",
     "category": "Smart city projects",
     "lat": 28.618796,
     "lng": 77.28822,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1487166544",
-    "name": "Faculty of Technology",
-    "category": "Smart city projects",
-    "lat": 28.691077,
-    "lng": 77.211624,
     "description": "Active construction/redevelopment site in Delhi, currently in progress.",
     "status": "ongoing",
     "type": "Active Development Site",
