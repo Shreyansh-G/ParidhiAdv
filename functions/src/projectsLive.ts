@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-08-10T05:09:22.990Z
+// Fetched: 2026-08-17T04:13:35.520Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsData'
 
-export const liveProjectsFetchedAt = '2026-08-10T05:09:22.990Z'
+export const liveProjectsFetchedAt = '2026-08-17T04:13:35.520Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
@@ -1151,14 +1151,14 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
   {
-    "id": "osm-way-1272488333",
-    "name": "Patparganj Road",
+    "id": "osm-way-672161237",
+    "name": "Ratan Lal Sahdev Marg",
     "category": "Road projects",
-    "lat": 28.635963,
-    "lng": 77.28574,
-    "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
+    "lat": 28.577971,
+    "lng": 77.236067,
+    "description": "Active road construction near Delhi — being built as a residential road. Live from OpenStreetMap construction mapping.",
     "status": "ongoing",
-    "type": "Road Under Construction",
+    "type": "Road Under Construction (residential)",
     "location": "Delhi",
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
@@ -1223,47 +1223,11 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
   {
-    "id": "osm-way-1505504375",
-    "name": "Basanti Marg",
-    "category": "Road projects",
-    "lat": 28.518744,
-    "lng": 77.035772,
-    "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
-    "status": "ongoing",
-    "type": "Road Under Construction",
-    "location": "Delhi",
-    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
-  },
-  {
-    "id": "osm-way-1505504373",
-    "name": "Chauma Road",
-    "category": "Road projects",
-    "lat": 28.518703,
-    "lng": 77.035647,
-    "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
-    "status": "ongoing",
-    "type": "Road Under Construction",
-    "location": "Delhi",
-    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
-  },
-  {
     "id": "osm-way-264256640",
     "name": "UER III (80 m)",
     "category": "Road projects",
     "lat": 28.655636,
     "lng": 76.968694,
-    "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
-    "status": "ongoing",
-    "type": "Road Under Construction",
-    "location": "Delhi",
-    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
-  },
-  {
-    "id": "osm-way-1305936732",
-    "name": "Ambedkar Marg",
-    "category": "Road projects",
-    "lat": 28.416824,
-    "lng": 77.330535,
     "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
     "status": "ongoing",
     "type": "Road Under Construction",
@@ -1355,6 +1319,19 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
+    "id": "osm-way-350830711",
+    "name": "Boys' Hostel",
+    "category": "Smart city projects",
+    "lat": 28.683027,
+    "lng": 77.211474,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "department": "Hindu College",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
     "id": "osm-way-1421398322",
     "name": "Nextra Commercial Site",
     "category": "Smart city projects",
@@ -1438,18 +1415,6 @@ export const liveProjects: EnhancedProject[] = [
     "status": "ongoing",
     "type": "Active Development Site",
     "location": "new delhi Hariyana, Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1463742383",
-    "name": "IKEA (u/c)",
-    "category": "Smart city projects",
-    "lat": 28.586047,
-    "lng": 77.3742,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
     "impact": "Ongoing urban development contributing to the city’s growth."
   }
 ]
