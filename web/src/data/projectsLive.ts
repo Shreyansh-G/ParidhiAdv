@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-08-24T04:19:16.762Z
+// Fetched: 2026-08-31T10:03:11.153Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsEnhanced'
 
-export const liveProjectsFetchedAt = '2026-08-24T04:19:16.762Z'
+export const liveProjectsFetchedAt = '2026-08-31T10:03:11.153Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
@@ -1163,18 +1163,6 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
   {
-    "id": "osm-way-1320128439",
-    "name": "DND-KMP Expressway",
-    "category": "Road projects",
-    "lat": 28.566781,
-    "lng": 77.285812,
-    "description": "Active road construction near Delhi — being built as a motorway road. Live from OpenStreetMap construction mapping.",
-    "status": "ongoing",
-    "type": "Road Under Construction (motorway)",
-    "location": "Delhi",
-    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
-  },
-  {
     "id": "osm-way-1452560513",
     "name": "Old Palam Road",
     "category": "Road projects",
@@ -1344,6 +1332,18 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
+    "id": "osm-way-1361568806",
+    "name": "Proposed aerospace museum",
+    "category": "Smart city projects",
+    "lat": 28.570463,
+    "lng": 77.12708,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
     "id": "osm-way-313544637",
     "name": "Marriot Marquis",
     "category": "Smart city projects",
@@ -1403,18 +1403,6 @@ export const liveProjects: EnhancedProject[] = [
     "type": "Active Development Site",
     "location": "Delhi",
     "department": "DDA",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-662474418",
-    "name": "Tajpur Ecopark",
-    "category": "Smart city projects",
-    "lat": 28.497729,
-    "lng": 77.308259,
-    "description": "Active construction/redevelopment site in new delhi Hariyana, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "new delhi Hariyana, Delhi",
     "impact": "Ongoing urban development contributing to the city’s growth."
   }
 ]
