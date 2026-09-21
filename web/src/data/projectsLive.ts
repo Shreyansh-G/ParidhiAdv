@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-09-14T09:26:14.390Z
+// Fetched: 2026-09-21T09:14:06.290Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsEnhanced'
 
-export const liveProjectsFetchedAt = '2026-09-14T09:26:14.390Z'
+export const liveProjectsFetchedAt = '2026-09-21T09:14:06.290Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
@@ -352,6 +352,18 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Expands access to education and skill development for students across NCR."
   },
   {
+    "id": "osm-way-289883321",
+    "name": "Mata Sundri College for Women",
+    "category": "Colleges",
+    "lat": 28.633407,
+    "lng": 77.233526,
+    "description": "Higher-education campus in New Delhi, part of Delhi's public learning infrastructure.",
+    "status": "handovered",
+    "type": "College Campus",
+    "location": "New Delhi, Delhi",
+    "impact": "Expands access to education and skill development for students across NCR."
+  },
+  {
     "id": "osm-way-1409394982",
     "name": "Dyal Singh College",
     "category": "Colleges",
@@ -401,6 +413,18 @@ export const liveProjects: EnhancedProject[] = [
     "type": "College Campus",
     "location": "Delhi",
     "department": "Delhi University",
+    "impact": "Expands access to education and skill development for students across NCR."
+  },
+  {
+    "id": "osm-way-289405082",
+    "name": "Maulana Azad Medical College",
+    "category": "Colleges",
+    "lat": 28.635509,
+    "lng": 77.237888,
+    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
+    "status": "handovered",
+    "type": "College Campus",
+    "location": "Delhi",
     "impact": "Expands access to education and skill development for students across NCR."
   },
   {
@@ -474,31 +498,6 @@ export const liveProjects: EnhancedProject[] = [
     "status": "handovered",
     "type": "University Campus",
     "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-node-1116439249",
-    "name": "DCAC",
-    "category": "Colleges",
-    "lat": 28.577873,
-    "lng": 77.184546,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-259178987",
-    "name": "Ayurvedic and Unani Tibbia College",
-    "category": "Colleges",
-    "lat": 28.655259,
-    "lng": 77.194034,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "department": "Delhi University",
     "impact": "Expands access to education and skill development for students across NCR."
   },
   {
@@ -1195,6 +1194,18 @@ export const liveProjects: EnhancedProject[] = [
     "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
     "status": "ongoing",
     "type": "Road Under Construction",
+    "location": "Delhi",
+    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
+  },
+  {
+    "id": "osm-way-1559129941",
+    "name": "Dwarka Expressway-Vasant Kunj Twin Tunnel",
+    "category": "Road projects",
+    "lat": 28.516657,
+    "lng": 77.12205,
+    "description": "Active road construction near Delhi — being built as a trunk road. Live from OpenStreetMap construction mapping.",
+    "status": "ongoing",
+    "type": "Road Under Construction (trunk)",
     "location": "Delhi",
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
