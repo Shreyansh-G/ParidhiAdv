@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-09-28T10:17:27.643Z
+// Fetched: 2026-10-05T10:51:50.096Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsData'
 
-export const liveProjectsFetchedAt = '2026-09-28T10:17:27.643Z'
+export const liveProjectsFetchedAt = '2026-10-05T10:51:50.096Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
@@ -1222,6 +1222,18 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
   {
+    "id": "osm-way-1563401086",
+    "name": "HUDA Garden",
+    "category": "Road projects",
+    "lat": 28.473677,
+    "lng": 77.055669,
+    "description": "Active road construction near Delhi. Live from OpenStreetMap construction mapping.",
+    "status": "ongoing",
+    "type": "Road Under Construction",
+    "location": "Delhi",
+    "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
+  },
+  {
     "id": "osm-way-264256640",
     "name": "UER III (80 m)",
     "category": "Road projects",
@@ -1234,71 +1246,11 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Will enhance connectivity and reduce travel time once opened to traffic."
   },
   {
-    "id": "osm-way-1548439800",
-    "name": "Delhi Metro construction",
-    "category": "Smart city projects",
-    "lat": 28.614204,
-    "lng": 77.220205,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
     "id": "osm-way-1218426668",
     "name": "Common Central Secretariat",
     "category": "Smart city projects",
     "lat": 28.615438,
     "lng": 77.221793,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1548439790",
-    "name": "Ministry of external affair construction",
-    "category": "Smart city projects",
-    "lat": 28.621381,
-    "lng": 77.225454,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1201558793",
-    "name": "GPRA Sarojini Nagar Type 2",
-    "category": "Smart city projects",
-    "lat": 28.580202,
-    "lng": 77.196912,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1201558785",
-    "name": "GPRA Sarojini Nagar Type 4",
-    "category": "Smart city projects",
-    "lat": 28.578868,
-    "lng": 77.195354,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1201558784",
-    "name": "GPRA Sarojini Nagar Type 5",
-    "category": "Smart city projects",
-    "lat": 28.576844,
-    "lng": 77.19404,
     "description": "Active construction/redevelopment site in Delhi, currently in progress.",
     "status": "ongoing",
     "type": "Active Development Site",
@@ -1318,48 +1270,11 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
-    "id": "osm-way-350830711",
-    "name": "Boys' Hostel",
+    "id": "osm-way-1144702710",
+    "name": "Sarai Kale Khan RRTS Station",
     "category": "Smart city projects",
-    "lat": 28.683027,
-    "lng": 77.211474,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "department": "Hindu College",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1421398322",
-    "name": "Nextra Commercial Site",
-    "category": "Smart city projects",
-    "lat": 28.618796,
-    "lng": 77.28822,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-1361568806",
-    "name": "Proposed aerospace museum",
-    "category": "Smart city projects",
-    "lat": 28.570463,
-    "lng": 77.12708,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-313544637",
-    "name": "Marriot Marquis",
-    "category": "Smart city projects",
-    "lat": 28.549664,
-    "lng": 77.121473,
+    "lat": 28.588941,
+    "lng": 77.258515,
     "description": "Active construction/redevelopment site in Delhi, currently in progress.",
     "status": "ongoing",
     "type": "Active Development Site",
@@ -1380,18 +1295,6 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
-    "id": "osm-way-895444951",
-    "name": "noida habitai center",
-    "category": "Smart city projects",
-    "lat": 28.549028,
-    "lng": 77.323368,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
     "id": "osm-way-1273171314",
     "name": "Kiran Nadar Museum of Art and Cultural Center",
     "category": "Smart city projects",
@@ -1404,16 +1307,101 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
-    "id": "osm-way-189447678",
-    "name": "Bharat Vandana Park",
+    "id": "osm-way-662474418",
+    "name": "Tajpur Ecopark",
     "category": "Smart city projects",
-    "lat": 28.571184,
-    "lng": 77.059077,
+    "lat": 28.497729,
+    "lng": 77.308259,
+    "description": "Active construction/redevelopment site in new delhi Hariyana, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "new delhi Hariyana, Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1463742383",
+    "name": "IKEA (u/c)",
+    "category": "Smart city projects",
+    "lat": 28.586047,
+    "lng": 77.3742,
     "description": "Active construction/redevelopment site in Delhi, currently in progress.",
     "status": "ongoing",
     "type": "Active Development Site",
     "location": "Delhi",
-    "department": "DDA",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1424744366",
+    "name": "The Presige City",
+    "category": "Smart city projects",
+    "lat": 28.641093,
+    "lng": 77.398039,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1223763808",
+    "name": "Summit Plaza",
+    "category": "Smart city projects",
+    "lat": 28.445969,
+    "lng": 77.106077,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "department": "DLF",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1441600441",
+    "name": "Experion",
+    "category": "Smart city projects",
+    "lat": 28.432307,
+    "lng": 77.098045,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1264441233",
+    "name": "Max Healthcare",
+    "category": "Smart city projects",
+    "lat": 28.43015,
+    "lng": 77.099779,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1270565221",
+    "name": "Dharav High School",
+    "category": "Smart city projects",
+    "lat": 28.428176,
+    "lng": 77.066984,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
+    "id": "osm-way-1247512615",
+    "name": "Global City Gurgaon (u/c)",
+    "category": "Smart city projects",
+    "lat": 28.431052,
+    "lng": 76.977332,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "department": "HSIIDC",
     "impact": "Ongoing urban development contributing to the city’s growth."
   }
 ]
