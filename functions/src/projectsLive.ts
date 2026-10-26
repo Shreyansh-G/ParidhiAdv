@@ -3,14 +3,254 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-10-19T09:15:24.863Z
+// Fetched: 2026-10-26T09:26:14.008Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsData'
 
-export const liveProjectsFetchedAt = '2026-10-19T09:15:24.863Z'
+export const liveProjectsFetchedAt = '2026-10-26T09:26:14.008Z'
 
 export const liveProjects: EnhancedProject[] = [
+  {
+    "id": "osm-node-7138534287",
+    "name": "Lady Hardinge Medical College & Associated Hospitals",
+    "category": "Hospitals",
+    "lat": 28.634138,
+    "lng": 77.212909,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138493193",
+    "name": "Kalawati Saran Children's Hospital",
+    "category": "Hospitals",
+    "lat": 28.635765,
+    "lng": 77.211066,
+    "description": "Public healthcare facility serving the New Delhi area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "New Delhi, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138493258",
+    "name": "Central Hospital (Northern Railways)",
+    "category": "Hospitals",
+    "lat": 28.636587,
+    "lng": 77.21739,
+    "description": "Public healthcare facility serving the New Delhi area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "New Delhi, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-928491343",
+    "name": "Delhi Heart and Lung Institute Super Speciality Hospital",
+    "category": "Hospitals",
+    "lat": 28.641678,
+    "lng": 77.205268,
+    "description": "Public healthcare facility serving the Delhi area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138534340",
+    "name": "NGO Lok Kalyan Samiti",
+    "category": "Hospitals",
+    "lat": 28.629808,
+    "lng": 77.238701,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138534368",
+    "name": "Mohan Eye Institute",
+    "category": "Hospitals",
+    "lat": 28.643127,
+    "lng": 77.190687,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138493196",
+    "name": "Maulana Azad Institute of Dental Sciences",
+    "category": "Hospitals",
+    "lat": 28.637153,
+    "lng": 77.236999,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-5758573849",
+    "name": "City Hospital",
+    "category": "Hospitals",
+    "lat": 28.643999,
+    "lng": 77.191284,
+    "description": "Public healthcare facility serving the Delhi area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-5246751221",
+    "name": "Sir Ganga Ram Kolmet Hospital",
+    "category": "Hospitals",
+    "lat": 28.643492,
+    "lng": 77.187296,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138534392",
+    "name": "Sharma Medical Center",
+    "category": "Hospitals",
+    "lat": 28.649456,
+    "lng": 77.209831,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138534302",
+    "name": "Sunder Lal Jain Eye Hospital",
+    "category": "Hospitals",
+    "lat": 28.649501,
+    "lng": 77.209821,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-3947460096",
+    "name": "Surbhi hospital",
+    "category": "Hospitals",
+    "lat": 28.649135,
+    "lng": 77.216442,
+    "description": "Public healthcare facility serving the New Delhi area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "New Delhi, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138534296",
+    "name": "Free Maternity & Child Welfare Centeri",
+    "category": "Hospitals",
+    "lat": 28.647265,
+    "lng": 77.230853,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138632241",
+    "name": "MCW Sewa Nagar",
+    "category": "Hospitals",
+    "lat": 28.577053,
+    "lng": 77.226043,
+    "description": "Public healthcare facility serving the South East area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "South East, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138534364",
+    "name": "Dr. N. C. Joshi Memorial Hospital",
+    "category": "Hospitals",
+    "lat": 28.652965,
+    "lng": 77.199485,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138493205",
+    "name": "Charak Palika Hospital NDMC",
+    "category": "Hospitals",
+    "lat": 28.585315,
+    "lng": 77.177024,
+    "description": "Public healthcare facility serving the New Delhi area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "New Delhi, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138534435",
+    "name": "Neera Eye Centre",
+    "category": "Hospitals",
+    "lat": 28.642443,
+    "lng": 77.242765,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138534372",
+    "name": "Navjoyti Eye Centre",
+    "category": "Hospitals",
+    "lat": 28.643523,
+    "lng": 77.242461,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138534310",
+    "name": "Kasturba Hospital",
+    "category": "Hospitals",
+    "lat": 28.649831,
+    "lng": 77.235928,
+    "description": "Public healthcare facility serving the Central area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "Central, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
+  {
+    "id": "osm-node-7138632176",
+    "name": "Manav Medicare Centre",
+    "category": "Hospitals",
+    "lat": 28.570687,
+    "lng": 77.21996,
+    "description": "Public healthcare facility serving the South East area.",
+    "status": "handovered",
+    "type": "Hospital",
+    "location": "South East, Delhi",
+    "impact": "Improves healthcare access and emergency response for nearby residents."
+  },
   {
     "id": "osm-way-138946134",
     "name": "Moraji Desai National Institute Of Yoga",
@@ -716,186 +956,6 @@ export const liveProjects: EnhancedProject[] = [
     "type": "Bridge Structure",
     "location": "Delhi",
     "impact": "Strengthens urban mobility and shortens travel across natural/rail barriers."
-  },
-  {
-    "id": "osm-way-74851427",
-    "name": "Shivaji Flyover",
-    "category": "Flyovers",
-    "lat": 28.632312,
-    "lng": 77.228956,
-    "description": "Grade-separated corridor easing traffic flow along Shivaji Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-463710731",
-    "name": "New Delhi Railway Station Flyover",
-    "category": "Flyovers",
-    "lat": 28.644577,
-    "lng": 77.219483,
-    "description": "Grade-separated corridor easing traffic flow along New Delhi Railway Station Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-31756483",
-    "name": "Aurobindo Marg Flyover",
-    "category": "Flyovers",
-    "lat": 28.580319,
-    "lng": 77.211746,
-    "description": "Grade-separated corridor easing traffic flow along Aurobindo Marg Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-24563335",
-    "name": "Oberoi Flyover",
-    "category": "Flyovers",
-    "lat": 28.595544,
-    "lng": 77.241862,
-    "description": "Grade-separated corridor easing traffic flow along Oberoi Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-70220645",
-    "name": "ITO Flyover",
-    "category": "Flyovers",
-    "lat": 28.627597,
-    "lng": 77.246932,
-    "description": "Grade-separated corridor easing traffic flow along ITO Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-176492659",
-    "name": "Barapullah Road Flyover",
-    "category": "Flyovers",
-    "lat": 28.579177,
-    "lng": 77.222411,
-    "description": "Grade-separated corridor easing traffic flow along Barapullah Road Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-125736541",
-    "name": "Sachivalaya Road Flyover",
-    "category": "Flyovers",
-    "lat": 28.635212,
-    "lng": 77.248834,
-    "description": "Grade-separated corridor easing traffic flow along Sachivalaya Road Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-169421728",
-    "name": "Defence Colony Flyover",
-    "category": "Flyovers",
-    "lat": 28.582202,
-    "lng": 77.239669,
-    "description": "Grade-separated corridor easing traffic flow along Defence Colony Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-34404761",
-    "name": "Dhaula Kuan Flyover",
-    "category": "Flyovers",
-    "lat": 28.594553,
-    "lng": 77.166507,
-    "description": "Grade-separated corridor easing traffic flow along Dhaula Kuan Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-70258957",
-    "name": "Nizamuddin Road Flyover",
-    "category": "Flyovers",
-    "lat": 28.598082,
-    "lng": 77.255764,
-    "description": "Grade-separated corridor easing traffic flow along Nizamuddin Road Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-44315450",
-    "name": "AIIMS Flyover",
-    "category": "Flyovers",
-    "lat": 28.569169,
-    "lng": 77.209263,
-    "description": "Grade-separated corridor easing traffic flow along AIIMS Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-44315437",
-    "name": "Raj Nagar Flyover",
-    "category": "Flyovers",
-    "lat": 28.569676,
-    "lng": 77.199359,
-    "description": "Grade-separated corridor easing traffic flow along Raj Nagar Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-44317158",
-    "name": "Moti Bagh Flyover",
-    "category": "Flyovers",
-    "lat": 28.578208,
-    "lng": 77.176178,
-    "description": "Grade-separated corridor easing traffic flow along Moti Bagh Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-36326998",
-    "name": "Bikaji Cama Place Flyover",
-    "category": "Flyovers",
-    "lat": 28.569627,
-    "lng": 77.189818,
-    "description": "Grade-separated corridor easing traffic flow along Bikaji Cama Place Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
-  },
-  {
-    "id": "osm-way-44316345",
-    "name": "South Extension Flyover",
-    "category": "Flyovers",
-    "lat": 28.567696,
-    "lng": 77.225578,
-    "description": "Grade-separated corridor easing traffic flow along South Extension Flyover.",
-    "status": "handovered",
-    "type": "Flyover / Elevated Corridor",
-    "location": "Delhi",
-    "impact": "Cuts signal delays and improves peak-hour traffic throughput."
   },
   {
     "id": "osm-way-38235181",
