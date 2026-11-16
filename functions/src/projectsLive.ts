@@ -3,12 +3,12 @@
 // Live Delhi infrastructure data from OpenStreetMap (© OSM contributors, ODbL)
 // via the free Overpass API. Re-run the script (or wait for the weekly GitHub
 // Action) to refresh.
-// Fetched: 2026-11-09T12:15:59.967Z
+// Fetched: 2026-11-16T12:15:57.757Z
 // ============================================================================
 
 import type { EnhancedProject } from './projectsData'
 
-export const liveProjectsFetchedAt = '2026-11-09T12:15:59.967Z'
+export const liveProjectsFetchedAt = '2026-11-16T12:15:57.757Z'
 
 export const liveProjects: EnhancedProject[] = [
   {
@@ -250,255 +250,6 @@ export const liveProjects: EnhancedProject[] = [
     "type": "Hospital",
     "location": "South East, Delhi",
     "impact": "Improves healthcare access and emergency response for nearby residents."
-  },
-  {
-    "id": "osm-way-138946134",
-    "name": "Moraji Desai National Institute Of Yoga",
-    "category": "Colleges",
-    "lat": 28.62576,
-    "lng": 77.207485,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "department": "Ministry of Ayush",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-138946123",
-    "name": "College of Nursing",
-    "category": "Colleges",
-    "lat": 28.624077,
-    "lng": 77.201377,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "department": "Doctor Ram Manohar Lohia Hospital",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-80954594",
-    "name": "National Defence College",
-    "category": "Colleges",
-    "lat": 28.602833,
-    "lng": 77.21541,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-44263455",
-    "name": "Lady Hardinge Medical College",
-    "category": "Colleges",
-    "lat": 28.635216,
-    "lng": 77.212742,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-1414843334",
-    "name": "Central Police Radio Training Institute",
-    "category": "Colleges",
-    "lat": 28.636115,
-    "lng": 77.192993,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-991086428",
-    "name": "College of Art",
-    "category": "Colleges",
-    "lat": 28.623687,
-    "lng": 77.238173,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "department": "Government of Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-node-2148682302",
-    "name": "National Institute Of Design",
-    "category": "Colleges",
-    "lat": 28.589909,
-    "lng": 77.225043,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-585974875",
-    "name": "Lady Irwin College",
-    "category": "Colleges",
-    "lat": 28.626709,
-    "lng": 77.237389,
-    "description": "Higher-education campus in New Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "New Delhi, Delhi",
-    "department": "Delhi University",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-289883321",
-    "name": "Mata Sundri College for Women",
-    "category": "Colleges",
-    "lat": 28.633407,
-    "lng": 77.233526,
-    "description": "Higher-education campus in New Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "New Delhi, Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-1409394982",
-    "name": "Dyal Singh College",
-    "category": "Colleges",
-    "lat": 28.590874,
-    "lng": 77.231167,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "department": "Delhi University",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-node-14289286903",
-    "name": "Ahimsa Women's Polytechnic",
-    "category": "Colleges",
-    "lat": 28.635404,
-    "lng": 77.184717,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-80418112",
-    "name": "Zakir Husain Delhi College",
-    "category": "Colleges",
-    "lat": 28.639698,
-    "lng": 77.229773,
-    "description": "Higher-education campus in New Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "New Delhi, Delhi",
-    "department": "Delhi University",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-158038114",
-    "name": "Janki Devi Memorial College",
-    "category": "Colleges",
-    "lat": 28.641498,
-    "lng": 77.191483,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "department": "Delhi University",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-81352232",
-    "name": "Jesus and Mary College",
-    "category": "Colleges",
-    "lat": 28.594409,
-    "lng": 77.178468,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "department": "Delhi University",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-289405082",
-    "name": "Maulana Azad Medical College",
-    "category": "Colleges",
-    "lat": 28.635509,
-    "lng": 77.237888,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-1539359556",
-    "name": "Ambedkar University Delhi Lodhi Road Campus",
-    "category": "Colleges",
-    "lat": 28.581072,
-    "lng": 77.219625,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-81352240",
-    "name": "Maitreyi College",
-    "category": "Colleges",
-    "lat": 28.592065,
-    "lng": 77.177209,
-    "description": "Higher-education campus in New Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "New Delhi, Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-289731395",
-    "name": "School of Planning and Architecture",
-    "category": "Colleges",
-    "lat": 28.628774,
-    "lng": 77.245874,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "University Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-way-220369755",
-    "name": "service road",
-    "category": "Colleges",
-    "lat": 28.630643,
-    "lng": 77.245455,
-    "description": "Higher-education campus in New Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "University Campus",
-    "location": "New Delhi, Delhi",
-    "department": "Govt. of India",
-    "impact": "Expands access to education and skill development for students across NCR."
-  },
-  {
-    "id": "osm-node-2445999512",
-    "name": "CSIR-NIScPR",
-    "category": "Colleges",
-    "lat": 28.638483,
-    "lng": 77.173365,
-    "description": "Higher-education campus in Delhi, part of Delhi's public learning infrastructure.",
-    "status": "handovered",
-    "type": "College Campus",
-    "location": "Delhi",
-    "impact": "Expands access to education and skill development for students across NCR."
   },
   {
     "id": "osm-node-5453646586",
@@ -1379,6 +1130,18 @@ export const liveProjects: EnhancedProject[] = [
     "impact": "Ongoing urban development contributing to the city’s growth."
   },
   {
+    "id": "osm-way-1487166544",
+    "name": "Faculty of Technology",
+    "category": "Smart city projects",
+    "lat": 28.691077,
+    "lng": 77.211624,
+    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
+    "status": "ongoing",
+    "type": "Active Development Site",
+    "location": "Delhi",
+    "impact": "Ongoing urban development contributing to the city’s growth."
+  },
+  {
     "id": "osm-way-1361568806",
     "name": "Proposed aerospace museum",
     "category": "Smart city projects",
@@ -1437,19 +1200,6 @@ export const liveProjects: EnhancedProject[] = [
     "status": "ongoing",
     "type": "Active Development Site",
     "location": "Delhi",
-    "impact": "Ongoing urban development contributing to the city’s growth."
-  },
-  {
-    "id": "osm-way-189447678",
-    "name": "Bharat Vandana Park",
-    "category": "Smart city projects",
-    "lat": 28.571184,
-    "lng": 77.059077,
-    "description": "Active construction/redevelopment site in Delhi, currently in progress.",
-    "status": "ongoing",
-    "type": "Active Development Site",
-    "location": "Delhi",
-    "department": "DDA",
     "impact": "Ongoing urban development contributing to the city’s growth."
   }
 ]
